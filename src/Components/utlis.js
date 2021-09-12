@@ -28,11 +28,11 @@ return  sorteddata.sort((a,b)=>(a.cases>b.cases? -1:1))
 
 
 
-
+/*
 export const prettier=(sta)=>(
-sta?`+${numeral(sta).format("0,0a")}`
-);
-
+sta?`+${numeral(sta).format("0.0a")}`
+)
+*/
 
 
 

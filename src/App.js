@@ -145,7 +145,7 @@ console.log(countrydata);
         total={countrydata.deaths} />
      </div>
   
- <Map center={mapcenter} countries={allcountriesname} casetype={casetype} zoom={zoom}/>
+ <Map center={mapcenter} countries={allcountriesdata} casetype={casetype} zoom={zoom}/>
 
 </div>
 

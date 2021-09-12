@@ -1,9 +1,9 @@
 import React from 'react';
 import './InfoBox.css';
 import {Card,CardContent,Typography} from '@material-ui/core';
-import {prettier} from "./utlis.js";
+//import {prettier} from "./utlis.js";
 
-function InfoBox({title,cases,active,total,...props}) {
+function InfoBox({title,cases,active,isRed,total,...props}) {
   return (
 
     <Card   onClick={props.onClick} className={`card  ${active && "infoBox-selected" } ${isRed && "infoBoxred"}`}>
@@ -12,7 +12,7 @@ function InfoBox({title,cases,active,total,...props}) {
    <h3>{title} </h3> 
   </Typography>
   
- <h3 className={`todaycases ${!isRed && "notred-recovered"}`}>{prettier(cases)}</h3>
+ <h3 className={`todaycases ${!isRed && "notred-recovered"}`}>{cases}</h3>
 
    <Typography className='textSecondary'>
    {total} M TOTAL
